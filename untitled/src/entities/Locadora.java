@@ -59,7 +59,7 @@ public class Locadora {
         }
         else {
             System.out.println("Carro alugado com sucesso");
-            setDisponivel(false);
+            carro.setDisponivel(false);
             setDiasAlugado(diasAlugado);
         }
     }

@@ -25,7 +25,7 @@ public class Program {
             int dias = sc.nextInt();
             locadoraAdm.alugarCarro(codigo, dias);
             System.out.println("Valor total a ser pago: " + String.format("%.2f", locadoraAdm.valorTotal()));
-
+            locadoraAdm.listarCarros();
             sc.close();
         }
         catch (ErrosOrSucess e){
