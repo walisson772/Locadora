@@ -4,6 +4,7 @@ import entities.Carro;
 import entities.ErrosOrSucess;
 import entities.Locadora;
 
+import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -29,6 +30,9 @@ public class Program {
         }
         catch (ErrosOrSucess e){
             System.out.println(e.getMessage());
+        }
+        catch (InputMismatchException e){
+            System.out.println("Digite apenas tipos de valores compativeis");
         }
     }
 }
